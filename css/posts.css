@@ -1,0 +1,36 @@
+.posts {
+	padding-left: 35px;
+}
+
+.posts__article {
+	margin-bottom: 27px;
+}
+
+@media (min-width: 480px) {
+	.posts {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-right: 7px;
+		padding-left: 8px;
+	}
+}
+
+@media (min-width: 768px) {
+	.posts {
+		padding-right: 9px;
+		padding-left: 1px;
+	}
+}
+
+@media (min-width: 992px) {
+	.posts {
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 1176px) {
+	.posts {
+		padding-left: 0;
+	}
+}
