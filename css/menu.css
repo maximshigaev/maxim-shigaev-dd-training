@@ -1,3 +1,7 @@
+.menu {
+	margin-bottom: 25px;
+}
+
 .menu__intro {
 	position: relative;
 }
@@ -52,6 +56,7 @@
 
 @media (min-width: 480px) {
 	.menu {
+		margin-bottom: 34px;
 		padding-left: 8px;
 	}
 
@@ -74,6 +79,7 @@
 
 @media (min-width: 768px) {
 	.menu {
+		margin-bottom: 0;
 		padding-left: 0;
 	}
 
@@ -100,6 +106,7 @@
 
 	.menu__item {
 		display: flex;
+		margin-bottom: 21px;
 	}
 
 	.menu__list {
@@ -127,10 +134,7 @@
 		border-left: 1px solid #f9fbfb;
 	}
 
-	.menu__link--active {
-		background-color: #d9efec;
-	}
-
+	.menu__link--active,
 	.menu__link:hover,
 	.menu__link:focus {
 		background-color: #d9efec;
@@ -185,5 +189,9 @@
 		font-style: italic;
 		font-size: 10px;
 		line-height: 19px;
+	}
+
+	.menu__item {
+		margin-bottom: 30px;
 	}
 }
