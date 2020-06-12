@@ -25,11 +25,11 @@
 	line-height: 14px;
 	text-align: center;
 	color: #34aca7;
+	word-wrap: break-word;
 }
 
 .header__link:hover,
 .header__link:focus {
-	color: #34aca7;
 	text-decoration: underline;
 }
 
@@ -101,6 +101,7 @@
 	.header {
 		flex-direction: column;
 		margin-top: 50px;
+		margin-bottom: 0;
 	}
 
 	.header__navigation {
@@ -139,6 +140,10 @@
 }
 
 @media (min-width: 1176px) {
+	.header {
+		margin-top: 46px;
+	}
+
 	.header__logoLink {
 		margin-bottom: -3px;
 	}
