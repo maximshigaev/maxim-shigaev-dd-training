@@ -4,7 +4,8 @@
 
 @media (min-width: 992px) {
 	.widgets {
-		display: block;
+		display: flex;
+		flex-direction: column;
 		width: 140px;
 		margin-bottom: 50px;
 		margin-left: -10px;
@@ -38,6 +39,15 @@
 
 		border: 1px solid #e5e5e5;
 		border-radius: 5px;
+	}
+
+	.widgets__link:hover,
+	.widgets__link:focus {
+		border: 1px solid #34aca7;
+	}
+
+	.widgets__link:active {
+		opacity: 0.5;
 	}
 
 	.widgets__link svg {
