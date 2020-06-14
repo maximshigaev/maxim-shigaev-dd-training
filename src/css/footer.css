@@ -1,0 +1,143 @@
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: -6px;
+	margin-right: 2px;
+	margin-left: 8px;
+	padding-top: 19px;
+	padding-bottom: 22px;
+
+	border-top: 2px solid #e5e5e5;
+}
+
+.footer__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -5px;
+	margin-bottom: 4px;
+	margin-left: -5px;
+}
+
+.footer__link,
+.footer__copyright {
+	font-size: 12px;
+	line-height: 12px;
+	letter-spacing: -0.24px;
+}
+
+.footer__item {
+	position: relative;
+}
+
+.footer__link {
+	margin-right: 5px;
+	margin-left: 5px;
+
+	color: #34aca7;
+}
+
+.footer__item:not(:last-child)::after {
+	content: '';
+	position: absolute;
+	top: 8px;
+	right: -1px;
+
+	width: 1px;
+	height: 11px;
+
+	background-color: #e5e5e5;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+	text-decoration: underline;
+}
+
+.footer__link:active {
+	opacity: 0.3;
+}
+
+.footer__copyright {
+	color: #e5e5e5;
+}
+
+.footer__socialList {
+	display: flex;
+	align-items: center;
+	margin-right: -2px;
+	margin-left: -2px;
+}
+
+.footer__socialItem {
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.footer__socialLink svg {
+	fill: #e5e5e5;
+}
+
+.footer__socialLink:hover svg,
+.footer__socialLink:focus svg {
+	fill: #34aca7;
+}
+
+.footer__socialLink:active svg {
+	fill-opacity: 0.3;
+}
+
+@media (min-width: 480px) {
+	.footer {
+		margin-right: 7px;
+		margin-left: 0;
+		padding-top: 21px;
+		padding-bottom: 36px;
+	}
+
+	.footer__socialList {
+		margin-top: 6px;
+		margin-right: -7px;
+	}
+
+	.footer__info {
+		margin-left: -4px;
+	}
+}
+
+@media (min-width: 768px) {
+	.footer__socialList {
+		margin-top: 10px;
+		margin-right: -3px;
+	}
+
+	.footer__info {
+		margin-left: -2px;
+	}
+}
+
+@media (min-width: 992px) {
+	.footer {
+		padding-top: 18px;
+	}
+
+	.footer__socialList {
+		margin-top: 5px;
+	}
+}
+
+@media (min-width: 1176px) {
+	.footer {
+		margin-right: 17px;
+		margin-left: -18px;
+		padding-top: 20px;
+	}
+
+	.footer__info {
+		margin-left: 8px;
+	}
+
+	.footer__socialList {
+		margin-right: 5px;
+	}
+}
