@@ -41,3 +41,27 @@ This repository contains training tasks that were fulfilled within the Frontend 
 - To use SVG sprite.
 - To split code into the independent blocks according to the BEM-methodology.
 - To train usage of flexbox technology within the project.
+
+## Third task
+
+### Requirements specification
+- To add task-runner and configure the project building.
+- To use NPM and Gulp technologies.
+- Not to use Webpack.
+- To enable hot-reloading within the project.
+
+### Achieved personal goals
+- To gain experience in project building via Gulp task-runner.
+- To implement gulp-tasks listed below:
+	* Inline SVG sprite
+	* Media-queries grouping
+	* Autoprefixes
+	* Styles minification
+	* Creating webp images
+	* Png and jpg images optimization
+	* Soursemaps
+	* Dividing tasks into development and production
+
+### Usage
+First of all, you should clone or download this repository on your local machine.
+After that, open your terminal and run `npm run build` to create an optimized production build or `npm run start` to create a build with source maps. Both commands will open this project in your browser.
