@@ -60,7 +60,7 @@ const images = () => {
 
 const webpImg = () => {
 	return gulp.src(`${config.SRC_PATH}/img/**/*.+(jpg|png)`)
-		.pipe(gulpIf(env === `prod`, webp({quality: 90})))
+		.pipe(webp({quality: 90}))
 		.pipe(gulp.dest(`${config.BUILD_PATH}/img`));
 }
 
