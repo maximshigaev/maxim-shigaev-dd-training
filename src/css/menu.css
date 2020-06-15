@@ -61,18 +61,17 @@
 	}
 
 	.menu__heading {
-		top: 262px;
+		bottom: 13%;
 
-		width: 546px;
+		max-width: 546px;
 	}
 
 	.menu__subtitle {
-		top: 311px;
 		bottom: 5px;
 
-		width: 546px;
+		max-width: 546px;
 		padding-top: 14px;
-		padding-bottom: 0;
+		padding-bottom: 15px;
 		padding-left: 24px;
 	}
 }
@@ -88,7 +87,6 @@
 	}
 
 	.menu__heading {
-		top: 285px;
 		bottom: 111px;
 
 		width: 269px;
@@ -98,7 +96,6 @@
 	}
 
 	.menu__subtitle {
-		top: 334px;
 		bottom: 69px;
 
 		width: 481px;

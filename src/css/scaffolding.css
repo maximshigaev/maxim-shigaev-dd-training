@@ -66,24 +66,24 @@ img {
 	}
 
 	.innerWrapper {
-		width: 561px;
+		max-width: 561px;
 		margin: 0 auto;
 		padding-right: 0;
 		padding-left: 0;
 	}
 
 	.innerWrapper--menu {
-		width: 561px;
+		max-width: 561px;
 	}
 
 	.innerWrapper--form {
-		width: 546px;
+		max-width: 546px;
 	}
 }
 
 @media (min-width: 768px) {
 	.innerWrapper {
-		width: 712px;
+		max-width: 712px;
 	}
 }
 
@@ -99,8 +99,9 @@ img {
 		width: 712px;
 	}
 
-	.innerWrapper--footer {
+	.wrapper .innerWrapper--footer {
 		width: 100%;
+		max-width: 100%;
 	}
 
 	.wrapper {
@@ -120,5 +121,6 @@ img {
 	.innerWrapper--form,
 	.innerWrapper--posts {
 		width: 896px;
+		max-width: 896px;
 	}
 }
