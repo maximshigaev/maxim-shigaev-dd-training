@@ -10,14 +10,18 @@
 	.posts {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: center;
+		margin-right: -17px;
 		margin-bottom: 31px;
+		margin-left: -17px;
 		padding-right: 7px;
 		padding-left: 8px;
 	}
 
-	.posts__article {
+	.posts .posts__article {
+		margin-right: 17px;
 		margin-bottom: 14px;
+		margin-left: 17px;
 	}
 }
 
@@ -26,6 +30,11 @@
 		margin-bottom: 65px;
 		padding-right: 9px;
 		padding-left: 1px;
+	}
+
+	.posts .posts__article {
+		margin-right: 12px;
+		margin-left: 12px;
 	}
 }
 

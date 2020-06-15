@@ -183,6 +183,10 @@
 	.article--recipe .acticle__time {
 		margin-left: 0;
 	}
+
+	.article--join br {
+		display: none;
+	}
 }
 
 @media (min-width: 768px) {

@@ -14,7 +14,6 @@
 }
 
 .form__description {
-	margin-bottom: 17px;
 	padding-left: 48px;
 
 	font-style: italic;
@@ -32,6 +31,7 @@
 
 .form__email {
 	width: 212px;
+	margin-top: 17px;
 	margin-right: 55px;
 	padding: 5px;
 	padding-top: 4px;
@@ -47,6 +47,7 @@
 }
 
 .form__button {
+	margin-top: 17px;
 	padding: 6px 18px;
 
 	font-size: 10px;
@@ -83,11 +84,15 @@
 
 	.form__email {
 		width: 395px;
+		margin-top: 15px;
 		margin-right: 35px;
 	}
 
+	.form__button {
+		margin-top: 15px;
+	}
+
 	.form__description {
-		margin-bottom: 15px;
 		padding-right: 18px;
 	}
 }
@@ -113,7 +118,6 @@
 
 	.form form {
 		width: 275px;
-		margin-top: 13px;
 	}
 
 	.form__email {
@@ -139,6 +143,11 @@
 
 	.form__description {
 		padding-left: 64px;
+	}
+
+	.form__email,
+	.form__button {
+		margin-top: 0;
 	}
 }
 
