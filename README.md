@@ -67,3 +67,20 @@ First of all, you should clone or download this repository on your local machine
 and run `npm i` in order to install all necessary dependencies via NPM. Then run `npm run build` to create
 an optimized production build or `npm run start` to create a build with source maps. Both commands
 will open this project in your browser.
+
+## Fourth task
+
+### Requirements specification
+- To add SCSS preprocessor to the project.
+- To use NPM, Gulp, and SCSS technologies.
+
+### Achieved personal goals
+- To refresh and simultaneously improve the skill of using the SCSS syntax within the project.
+- To gain experience in building SCSS files via Gulp.
+- To use variables, imports, and '&' features of SCSS preprocessor.
+
+### Usage
+First of all, you should clone or download this repository on your local machine. After that, open your terminal
+and run `npm i` in order to install all necessary dependencies via NPM. Then run `npm run build` to create
+an optimized production build or `npm run start` to create a build with source maps. Both commands
+will open this project in your browser.
