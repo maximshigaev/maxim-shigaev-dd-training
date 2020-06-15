@@ -26,20 +26,19 @@
 	text-align: center;
 	color: #34aca7;
 	word-wrap: break-word;
-}
 
-.header__link:hover,
-.header__link:focus {
-	text-decoration: underline;
-}
+	&:hover,
+	&:focus {
+		text-decoration: underline;
 
-.header__link:active {
-	opacity: 0.3;
-}
+		svg {
+			fill: #34aca7;
+		}
+	}
 
-.header__link:hover svg,
-.header__link:focus svg {
-	fill: #34aca7;
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 .header__item:not(:last-child) {
@@ -78,10 +77,10 @@
 
 	.header__item {
 		padding-top: 50px;
-	}
 
-	.header__item:last-child {
-		width: 100px;
+		&:last-child {
+			width: 100px;
+		}
 	}
 
 	.header__link {

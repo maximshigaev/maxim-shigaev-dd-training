@@ -49,11 +49,6 @@
 	width: 100%;
 }
 
-.menu__intro picture {
-	display: inline-block;
-	height: 0;
-}
-
 @media (min-width: 480px) {
 	.menu {
 		margin-bottom: 34px;
@@ -129,16 +124,16 @@
 		background-color: #eff8f7;
 		border-right: 1px solid #f9fbfb;
 		border-left: 1px solid #f9fbfb;
-	}
 
-	.menu__link--active,
-	.menu__link:hover,
-	.menu__link:focus {
-		background-color: #d9efec;
-	}
+		&--current,
+		&:hover,
+		&:focus {
+			background-color: #d9efec;
+		}
 
-	.menu__link:active {
-		opacity: 0.5;
+		&:active {
+			opacity: 0.5;
+		}
 	}
 }
 

@@ -12,6 +12,15 @@
 	line-height: 21px;
 	color: #34aca7;
 	letter-spacing: -0.44px;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 .article__content {
@@ -41,6 +50,15 @@
 	font-size: 16px;
 	color: #34aca7;
 	letter-spacing: -0.32px;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 .article--chips {
@@ -97,18 +115,6 @@
 	display: none;
 }
 
-.article__mainLink:hover,
-.article__mainLink:focus,
-.article__link:hover,
-.article__link:focus {
-	text-decoration: underline;
-}
-
-.article__mainLink:active,
-.article__link:active {
-	opacity: 0.3;
-}
-
 @media (min-width: 480px) {
 	.article {
 		display: flex;
@@ -116,6 +122,15 @@
 		width: 256px;
 		min-height: 320px;
 		margin-left: 0;
+
+		&--chips,
+		&--best {
+			min-height: 337px;
+		}
+
+		&--join {
+			min-height: 325px;
+		}
 	}
 
 	.article .article__image {
@@ -160,15 +175,6 @@
 
 	.article--recipe .article__content {
 		padding-right: 8px;
-	}
-
-	.article--chips,
-	.article--best {
-		min-height: 337px;
-	}
-
-	.article--join {
-		min-height: 325px;
 	}
 
 	.article--join span {

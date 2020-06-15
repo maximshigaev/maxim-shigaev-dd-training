@@ -40,10 +40,18 @@
 	line-height: 10px;
 
 	border: 1px solid #e5e5e5;
-}
 
-.form__email::placeholder {
-	color: #e5e5e5;
+	&:hover {
+		border: 1px solid #000000;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+
+	&::placeholder {
+		color: #e5e5e5;
+	}
 }
 
 .form__button {
@@ -56,18 +64,16 @@
 	background-image: linear-gradient(180deg, #f4f3f3 0%, #bbb9b9 100%);
 	border: none;
 	cursor: pointer;
-}
 
-.form__button:hover,
-.form__button:focus,
-.form__email:hover {
-	border: 1px solid #000000;
-}
+	&:hover,
+	&:focus {
+		border: 1px solid #000000;
+	}
 
-.form__button:active,
-.form__button:disabled,
-.form__email:active {
-	opacity: 0.3;
+	&:active,
+	&:disabled {
+		opacity: 0.3;
+	}
 }
 
 @media (min-width: 480px) {

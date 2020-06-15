@@ -33,15 +33,14 @@ img {
 	margin: 0 auto;
 	padding-right: 18px;
 	padding-left: 18px;
-}
 
-.innerWrapper--menu,
-.innerWrapper--form {
-	width: 100%;
-	padding-right: 0;
-	padding-left: 0;
+	&--menu,
+	&--form {
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+	}
 }
-
 
 .visuallyHidden {
 	position: absolute;
@@ -70,14 +69,14 @@ img {
 		margin: 0 auto;
 		padding-right: 0;
 		padding-left: 0;
-	}
 
-	.innerWrapper--menu {
-		max-width: 561px;
-	}
+		&--menu {
+			max-width: 561px;
+		}
 
-	.innerWrapper--form {
-		max-width: 546px;
+		&--form {
+			max-width: 546px;
+		}
 	}
 }
 
@@ -91,12 +90,12 @@ img {
 	.innerWrapper {
 		width: 174px;
 		margin: 0;
-	}
 
-	.innerWrapper--menu,
-	.innerWrapper--form,
-	.innerWrapper--posts {
-		width: 712px;
+		&--menu,
+		&--form,
+		&--posts {
+			width: 712px;
+		}
 	}
 
 	.wrapper .innerWrapper--footer {
