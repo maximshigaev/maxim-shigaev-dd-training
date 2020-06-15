@@ -63,5 +63,7 @@ This repository contains training tasks that were fulfilled within the Frontend 
 	* Dividing tasks into development and production
 
 ### Usage
-First of all, you should clone or download this repository on your local machine.
-After that, open your terminal and run `npm run build` to create an optimized production build or `npm run start` to create a build with source maps. Both commands will open this project in your browser.
+First of all, you should clone or download this repository on your local machine. After that, open your terminal
+and run `npm i` in order to install all necessary dependencies via NPM. Then run `npm run build` to create
+an optimized production build or `npm run start` to create a build with source maps. Both commands
+will open this project in your browser.
