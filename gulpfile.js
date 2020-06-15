@@ -14,12 +14,18 @@ const plumber = require('gulp-plumber');
 const gulpIf = require('gulp-if');
 const browserSync = require("browser-sync").create();
 const webp = require('gulp-webp');
+const sass = require('gulp-sass');
+const sassGlob = require('gulp-sass-glob');
 
-const reload = browserSync.reload;
 const env = process.env.NODE_ENV;
 const config = {
 	SRC_PATH: `src`,
 	BUILD_PATH: `build`
+}
+
+const reload = (done) => {
+  	browserSync.reload();
+  	done();
 }
 
 const html = () => {
@@ -34,10 +40,11 @@ const html = () => {
 const clean = () => del(`${config.BUILD_PATH}`);
 
 const styles = () => {
-	return gulp.src(`${config.SRC_PATH}/css/**/*.css`)
+	return gulp.src(`${config.SRC_PATH}/sass/style.scss`)
 		.pipe(plumber())
 		.pipe(gulpIf(env === `dev`, sourceMaps.init()))
-		.pipe(concat(`style.css`))
+		.pipe(sassGlob())
+		.pipe(sass())
 		.pipe(gulpIf(env === `prod`, groupMedia()))
 		.pipe(gulpIf(env === `prod`, postCss([
 			autoPrefixer()
@@ -73,7 +80,7 @@ const server = () => {
 
 const watch = () => {
 	gulp.watch(`${config.SRC_PATH}/*.html`, gulp.series(html, reload));
-	gulp.watch(`${config.SRC_PATH}/css/**/*.css`, gulp.series(styles, reload));
+	gulp.watch(`${config.SRC_PATH}/sass/**/*.scss`, gulp.series(styles, reload));
 	gulp.watch(`${config.SRC_PATH}/img/**/*.+(jpg|png|svg)`, gulp.series(images, reload));
 }
 
