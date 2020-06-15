@@ -61,8 +61,18 @@
 	}
 }
 
-.article--chips {
-	margin-left: 2px;
+.article {
+	&--chips {
+		margin-left: 2px;
+	}
+
+	&--join {
+		margin-left: 5px;
+	}
+
+	&--recipe {
+		margin-left: 7px;
+	}
 }
 
 .article--chips .article__image {
@@ -77,20 +87,12 @@
 	margin-right: 4px;
 }
 
-.article--join {
-	margin-left: 5px;
-}
-
 .article--join .article__image {
 	margin-bottom: 12px;
 }
 
 .article--join .article__mainLink {
 	margin-bottom: 16px;
-}
-
-.article--recipe {
-	margin-left: 7px;
 }
 
 .article--recipe .article__image {

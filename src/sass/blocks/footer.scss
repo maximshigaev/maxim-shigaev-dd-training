@@ -35,6 +35,15 @@
 	margin-left: 5px;
 
 	color: $mainGreenColor;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 .footer__item:not(:last-child)::after {
@@ -47,15 +56,6 @@
 	height: 11px;
 
 	background-color: $mainGrayColor;
-}
-
-.footer__link:hover,
-.footer__link:focus {
-	text-decoration: underline;
-}
-
-.footer__link:active {
-	opacity: 0.3;
 }
 
 .footer__copyright {
