@@ -10,7 +10,7 @@
 
 	font-size: 22px;
 	line-height: 21px;
-	color: #34aca7;
+	color: $mainGreenColor;
 	letter-spacing: -0.44px;
 
 	&:hover,
@@ -35,7 +35,7 @@
 	margin-left: -1px;
 
 	font-size: 16px;
-	color: #e5e5e5;
+	color: $mainGrayColor;
 	letter-spacing: -0.32px;
 }
 
@@ -43,12 +43,12 @@
 	margin-right: 7px;
 
 	font-size: 16px;
-	color: #e5e5e5;
+	color: $mainGrayColor;
 }
 
 .article__link {
 	font-size: 16px;
-	color: #34aca7;
+	color: $mainGreenColor;
 	letter-spacing: -0.32px;
 
 	&:hover,
@@ -115,7 +115,7 @@
 	display: none;
 }
 
-@media (min-width: 480px) {
+@media (min-width: $mobileWidth) {
 	.article {
 		display: flex;
 		flex-direction: column;
@@ -195,7 +195,7 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
 	.article {
 		justify-content: flex-start;
 		width: 157px;
@@ -219,7 +219,7 @@
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: $tabDeskWidth) {
 	.article {
 		width: 159px;
 	}
@@ -229,7 +229,7 @@
 	}
 }
 
-@media (min-width: 1176px) {
+@media (min-width: $desktopWidth) {
 	.article {
 		width: 207px;
 	}

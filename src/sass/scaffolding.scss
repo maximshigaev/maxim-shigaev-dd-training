@@ -11,7 +11,7 @@ body {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 20px;
-	font-family: 'Arial', sans-serif;
+	font-family: $mainFont;
 	color: black;
 
 	background-color: white;
@@ -59,7 +59,7 @@ img {
 	clip-path: inset(100%);
 }
 
-@media (min-width: 480px) {
+@media (min-width: $mobileWidth) {
 	body {
 		font-size: 14px;
 	}
@@ -80,13 +80,13 @@ img {
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
 	.innerWrapper {
 		max-width: 712px;
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: $tabDeskWidth) {
 	.innerWrapper {
 		width: 174px;
 		margin: 0;
@@ -111,7 +111,7 @@ img {
 	}
 }
 
-@media (min-width: 1176px) {
+@media (min-width: $desktopWidth) {
 	.wrapper {
 		width: 1088px;
 	}

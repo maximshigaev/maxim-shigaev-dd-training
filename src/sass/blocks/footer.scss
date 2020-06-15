@@ -8,7 +8,7 @@
 	padding-top: 19px;
 	padding-bottom: 22px;
 
-	border-top: 2px solid #e5e5e5;
+	border-top: 2px solid $mainGrayColor;
 }
 
 .footer__list {
@@ -34,7 +34,7 @@
 	margin-right: 5px;
 	margin-left: 5px;
 
-	color: #34aca7;
+	color: $mainGreenColor;
 }
 
 .footer__item:not(:last-child)::after {
@@ -46,7 +46,7 @@
 	width: 1px;
 	height: 11px;
 
-	background-color: #e5e5e5;
+	background-color: $mainGrayColor;
 }
 
 .footer__link:hover,
@@ -59,7 +59,7 @@
 }
 
 .footer__copyright {
-	color: #e5e5e5;
+	color: $mainGrayColor;
 }
 
 .footer__socialList {
@@ -75,19 +75,19 @@
 }
 
 .footer__socialLink svg {
-	fill: #e5e5e5;
+	fill: $mainGrayColor;
 }
 
 .footer__socialLink:hover svg,
 .footer__socialLink:focus svg {
-	fill: #34aca7;
+	fill: $mainGreenColor;
 }
 
 .footer__socialLink:active svg {
 	fill-opacity: 0.3;
 }
 
-@media (min-width: 480px) {
+@media (min-width: $mobileWidth) {
 	.footer {
 		margin-right: 7px;
 		margin-left: 0;
@@ -101,7 +101,7 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
 	.footer__socialList {
 		margin-top: 10px;
 		margin-right: -3px;
@@ -112,7 +112,7 @@
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: $tabDeskWidth) {
 	.footer {
 		padding-top: 18px;
 	}
@@ -122,7 +122,7 @@
 	}
 }
 
-@media (min-width: 1176px) {
+@media (min-width: $desktopWidth) {
 	.footer {
 		margin-right: 17px;
 		margin-left: -18px;

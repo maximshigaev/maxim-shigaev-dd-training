@@ -2,7 +2,7 @@
 	display: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: $tabDeskWidth) {
 	.widgets {
 		display: flex;
 		flex-direction: column;
@@ -17,10 +17,10 @@
 
 		font-size: 12px;
 		line-height: 12px;
-		font-family: 'Verdana', sans-serif;
+		font-family: $subFont;
 		text-transform: uppercase;
 
-		border-bottom: 1px dashed #e5e5e5;
+		border-bottom: 1px dashed $mainGrayColor;
 	}
 
 	.widgets__link {
@@ -35,14 +35,14 @@
 		font-style: italic;
 		font-size: 10px;
 		line-height: 12px;
-		color: #34aca7;
+		color: $mainGreenColor;
 
-		border: 1px solid #e5e5e5;
+		border: 1px solid $mainGrayColor;
 		border-radius: 5px;
 
 		&:hover,
 		&:focus {
-			border: 1px solid #34aca7;
+			border: 1px solid $mainGreenColor;
 		}
 
 		&:active {
@@ -70,7 +70,7 @@
 	}
 }
 
-@media (min-width: 1176px) {
+@media (min-width: $desktopWidth) {
 	.widgets__link {
 		margin-bottom: 5px;
 		padding-bottom: 8px;

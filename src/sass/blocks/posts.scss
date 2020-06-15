@@ -6,7 +6,7 @@
 	margin-bottom: 27px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: $mobileWidth) {
 	.posts {
 		display: flex;
 		flex-wrap: wrap;
@@ -25,7 +25,7 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
 	.posts {
 		margin-bottom: 65px;
 		padding-right: 9px;
@@ -38,14 +38,14 @@
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: $tabDeskWidth) {
 	.posts {
 		margin-bottom: 32px;
 		padding-right: 0;
 	}
 }
 
-@media (min-width: 1176px) {
+@media (min-width: $desktopWidth) {
 	.posts {
 		margin-bottom: 13px;
 		padding-left: 0;
