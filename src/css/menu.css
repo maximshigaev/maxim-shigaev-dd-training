@@ -131,7 +131,7 @@
 		border-left: 1px solid #f9fbfb;
 	}
 
-	.menu__link--active,
+	.menu__link--current,
 	.menu__link:hover,
 	.menu__link:focus {
 		background-color: #d9efec;
