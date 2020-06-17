@@ -1,9 +1,9 @@
 .posts {
 	padding-left: 35px;
-}
 
-.posts__article {
-	margin-bottom: 27px;
+	&__article {
+		margin-bottom: 27px;
+	}
 }
 
 @media (min-width: $mobileWidth) {

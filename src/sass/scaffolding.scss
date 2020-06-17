@@ -113,10 +113,12 @@ img {
 		width: 1088px;
 	}
 
-	.innerWrapper--menu,
-	.innerWrapper--form,
-	.innerWrapper--posts {
-		width: 896px;
-		max-width: 896px;
+	.innerWrapper {
+		&--menu,
+		&--form,
+		&--posts {
+			width: 896px;
+			max-width: 896px;
+		}
 	}
 }

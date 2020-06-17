@@ -9,44 +9,53 @@
 		width: 140px;
 		margin-bottom: 50px;
 		margin-left: -10px;
-	}
 
-	.widgets__title {
-		margin-bottom: 9px;
-		padding-bottom: 4px;
+		&__title {
+			margin-bottom: 9px;
+			padding-bottom: 4px;
 
-		font-size: 12px;
-		line-height: 12px;
-		font-family: $subFont;
-		text-transform: uppercase;
+			font-size: 12px;
+			line-height: 12px;
+			font-family: $subFont;
+			text-transform: uppercase;
 
-		border-bottom: 1px dashed $mainGrayColor;
-	}
-
-	.widgets__link {
-		position: relative;
-
-		display: block;
-		margin-bottom: 15px;
-		padding-top: 8px;
-		padding-bottom: 7px;
-		padding-left: 28px;
-
-		font-style: italic;
-		font-size: 10px;
-		line-height: 12px;
-		color: $mainGreenColor;
-
-		border: 1px solid $mainGrayColor;
-		border-radius: 5px;
-
-		&:hover,
-		&:focus {
-			border: 1px solid $mainGreenColor;
+			border-bottom: 1px dashed $mainGrayColor;
 		}
 
-		&:active {
-			opacity: 0.5;
+		&__link {
+			position: relative;
+
+			display: block;
+			margin-bottom: 15px;
+			padding-top: 8px;
+			padding-bottom: 7px;
+			padding-left: 28px;
+
+			font-style: italic;
+			font-size: 10px;
+			line-height: 12px;
+			color: $mainGreenColor;
+
+			border: 1px solid $mainGrayColor;
+			border-radius: 5px;
+
+			&:hover,
+			&:focus {
+				border: 1px solid $mainGreenColor;
+			}
+
+			&:active {
+				opacity: 0.5;
+			}
+		}
+
+		&__description {
+			margin-top: 10px;
+			margin-bottom: 14px;
+
+			font-style: italic;
+			font-size: 10px;
+			line-height: 19px;
 		}
 	}
 
@@ -58,20 +67,13 @@
 		width: 16px;
 		height: 14px;
 	}
-
-	.widgets__description {
-		margin-top: 10px;
-		margin-bottom: 14px;
-
-		font-style: italic;
-		font-size: 10px;
-		line-height: 19px;
-	}
 }
 
 @media (min-width: $desktopWidth) {
-	.widgets__link {
-		margin-bottom: 5px;
-		padding-bottom: 8px;
+	.widgets {
+		&__link {
+			margin-bottom: 5px;
+			padding-bottom: 8px;
+		}
 	}
 }

@@ -3,18 +3,22 @@
 	flex-direction: column;
 	margin-top: 35px;
 	margin-bottom: 38px;
-}
 
-.header__logoLink {
-	order: 1;
+	&__logoLink {
+		order: 1;
 
-	text-align: center;
-}
+		text-align: center;
+	}
 
-.header__list {
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 38px;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 38px;
+	}
+
+	&__item:not(:last-child) {
+		width: 100px;
+	}
 }
 
 .header__link {
@@ -41,10 +45,6 @@
 	}
 }
 
-.header__item:not(:last-child) {
-	width: 100px;
-}
-
 .header__link svg {
 	display: none;
 }
@@ -54,37 +54,37 @@
 		flex-direction: row;
 		margin-top: 21px;
 		margin-bottom: 36px;
-	}
 
-	.header__logoLink {
-		order: 0;
-	}
+		&__logoLink {
+			order: 0;
+		}
 
-	.header__navigation {
-		margin-top: 53px;
+		&__navigation {
+			margin-top: 53px;
+		}
 	}
 }
 
 @media (min-width: $tabletWidth) {
 	.header {
 		margin-bottom: 44px;
-	}
 
-	.header__navigation {
-		margin-top: 25px;
-		margin-left: 90px;
-	}
-
-	.header__item {
-		padding-top: 50px;
-
-		&:last-child {
-			width: 100px;
+		&__navigation {
+			margin-top: 25px;
+			margin-left: 90px;
 		}
-	}
 
-	.header__link {
-		position: relative;
+		&__item {
+			padding-top: 50px;
+
+			&:last-child {
+				width: 100px;
+			}
+		}
+
+		&__link {
+			position: relative;
+		}
 	}
 
 	.header__link svg {
@@ -101,53 +101,53 @@
 		flex-direction: column;
 		margin-top: 50px;
 		margin-bottom: 0;
-	}
 
-	.header__navigation {
-		min-height: 330px;
-		margin-top: 0;
-		margin-left: 0;
-	}
+		&__navigation {
+			min-height: 330px;
+			margin-top: 0;
+			margin-left: 0;
+		}
 
-	.header__link {
-		width: 140px;
-		padding-top: 12px;
-		padding-bottom: 40px;
-		padding-left: 35px;
+		&__link {
+			width: 140px;
+			padding-top: 12px;
+			padding-bottom: 40px;
+			padding-left: 35px;
 
-		text-align: left;
-	}
+			text-align: left;
+		}
 
-	.header__logoLink {
-		margin-bottom: 5px;
+		&__logoLink {
+			margin-bottom: 5px;
 
-		text-align: left;
+			text-align: left;
+		}
+
+		&__list {
+			margin-bottom: 13px;
+		}
+
+		&__item {
+			padding-top: 0;
+		}
 	}
 
 	.header__link svg {
 		top: 3px;
 		left: -7px;
 	}
-
-	.header__list {
-		margin-bottom: 13px;
-	}
-
-	.header__item {
-		padding-top: 0;
-	}
 }
 
 @media (min-width: $desktopWidth) {
 	.header {
 		margin-top: 46px;
-	}
 
-	.header__logoLink {
-		margin-bottom: -3px;
-	}
+		&__logoLink {
+			margin-bottom: -3px;
+		}
 
-	.header__list {
-		margin-bottom: 4px;
+		&__list {
+			margin-bottom: 4px;
+		}
 	}
 }

@@ -1,136 +1,136 @@
 .menu {
 	margin-bottom: 25px;
-}
 
-.menu__intro {
-	position: relative;
-}
+	&__intro {
+		position: relative;
+	}
 
-.menu__heading {
-	position: absolute;
-	bottom: 11%;
+	&__heading {
+		position: absolute;
+		bottom: 11%;
 
-	width: 100%;
-	padding-top: 16px;
-	padding-bottom: 13px;
-	padding-left: 8px;
+		width: 100%;
+		padding-top: 16px;
+		padding-bottom: 13px;
+		padding-left: 8px;
 
-	font-style: italic;
-	font-size: 22px;
-	letter-spacing: 0.22px;
+		font-style: italic;
+		font-size: 22px;
+		letter-spacing: 0.22px;
 
-	background-color: #ffffff;
-	opacity: 0.6;
-}
+		background-color: #ffffff;
+		opacity: 0.6;
+	}
 
-.menu__subtitle {
-	position: absolute;
-	bottom: 3px;
+	&__subtitle {
+		position: absolute;
+		bottom: 3px;
 
-	width: 100%;
-	padding-top: 9px;
-	padding-right: 6px;
-	padding-bottom: 15px;
-	padding-left: 6px;
+		width: 100%;
+		padding-top: 9px;
+		padding-right: 6px;
+		padding-bottom: 15px;
+		padding-left: 6px;
 
-	font-style: italic;
-	font-size: 14px;
-	line-height: 14px;
-	color: #ffffff;
+		font-style: italic;
+		font-size: 14px;
+		line-height: 14px;
+		color: #ffffff;
 
-	background-color: #000000;
-}
+		background-color: #000000;
+	}
 
-.menu__list {
-	display: none;
-}
+	&__list {
+		display: none;
+	}
 
-.menu__image {
-	width: 100%;
+	&__image {
+		width: 100%;
+	}
 }
 
 @media (min-width: $mobileWidth) {
 	.menu {
 		margin-bottom: 34px;
-	}
 
-	.menu__heading {
-		bottom: 13%;
+		&__heading {
+			bottom: 13%;
 
-		max-width: 546px;
-	}
+			max-width: 546px;
+		}
 
-	.menu__subtitle {
-		bottom: 5px;
+		&__subtitle {
+			bottom: 5px;
 
-		max-width: 546px;
-		padding-top: 14px;
-		padding-bottom: 15px;
-		padding-left: 24px;
+			max-width: 546px;
+			padding-top: 14px;
+			padding-bottom: 15px;
+			padding-left: 24px;
+		}
 	}
 }
 
 @media (min-width: $tabletWidth) {
 	.menu {
 		margin-bottom: 0;
-	}
 
-	.menu__intro {
-		height: 445px;
-	}
-
-	.menu__heading {
-		bottom: 111px;
-
-		width: 269px;
-		padding-left: 18px;
-
-		opacity: 1;
-	}
-
-	.menu__subtitle {
-		bottom: 69px;
-
-		width: 481px;
-	}
-
-	.menu__item {
-		display: flex;
-		margin-bottom: 21px;
-	}
-
-	.menu__list {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	.menu__description {
-		display: none;
-	}
-
-	.menu__link {
-		display: block;
-		width: 178px;
-		padding-top: 11px;
-		padding-bottom: 10px;
-
-		font-size: 14px;
-		line-height: 14px;
-		text-align: center;
-		color: $mainGreenColor;
-
-		background-color: #eff8f7;
-		border-right: 1px solid #f9fbfb;
-		border-left: 1px solid #f9fbfb;
-
-		&--current,
-		&:hover,
-		&:focus {
-			background-color: #d9efec;
+		&__intro {
+			height: 445px;
 		}
 
-		&:active {
-			opacity: 0.5;
+		&__heading {
+			bottom: 111px;
+
+			width: 269px;
+			padding-left: 18px;
+
+			opacity: 1;
+		}
+
+		&__subtitle {
+			bottom: 69px;
+
+			width: 481px;
+		}
+
+		&__item {
+			display: flex;
+			margin-bottom: 21px;
+		}
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&__description {
+			display: none;
+		}
+
+		&__link {
+			display: block;
+			width: 178px;
+			padding-top: 11px;
+			padding-bottom: 10px;
+
+			font-size: 14px;
+			line-height: 14px;
+			text-align: center;
+			color: $mainGreenColor;
+
+			background-color: #eff8f7;
+			border-right: 1px solid #f9fbfb;
+			border-left: 1px solid #f9fbfb;
+
+			&--current,
+			&:hover,
+			&:focus {
+				background-color: #d9efec;
+			}
+
+			&:active {
+				opacity: 0.5;
+			}
 		}
 	}
 }
@@ -138,50 +138,50 @@
 @media (min-width: $tabDeskWidth) {
 	.menu {
 		margin-top: 50px;
-	}
 
-	.menu__heading {
-		width: 272px;
-		padding-left: 21px;
-	}
+		&__heading {
+			width: 272px;
+			padding-left: 21px;
+		}
 
-	.menu__subtitle {
-		width: 487px;
+		&__subtitle {
+			width: 487px;
+		}
 	}
 }
 
 @media (min-width: $desktopWidth) {
 	.menu {
 		margin-top: 46px;
-	}
 
-	.menu__heading {
-		padding-left: 19px;
-	}
+		&__heading {
+			padding-left: 19px;
+		}
 
-	.menu__link {
-		width: 224px;
-		min-height: 85px;
-		padding-top: 26px;
-		padding-left: 19px;
+		&__link {
+			width: 224px;
+			min-height: 85px;
+			padding-top: 26px;
+			padding-left: 19px;
 
-		text-align: left;
-	}
+			text-align: left;
+		}
 
-	.menu__title {
-		font-size: 18px;
-		line-height: 18px;
-	}
+		&__title {
+			font-size: 18px;
+			line-height: 18px;
+		}
 
-	.menu__description {
-		display: block;
+		&__description {
+			display: block;
 
-		font-style: italic;
-		font-size: 10px;
-		line-height: 19px;
-	}
+			font-style: italic;
+			font-size: 10px;
+			line-height: 19px;
+		}
 
-	.menu__item {
-		margin-bottom: 30px;
+		&__item {
+			margin-bottom: 30px;
+		}
 	}
 }
