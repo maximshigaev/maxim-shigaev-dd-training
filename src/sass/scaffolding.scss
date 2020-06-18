@@ -28,21 +28,23 @@ img {
 	height: auto;
 }
 
-.innerWrapper {
-	width: 100%;
-	margin: 0 auto;
-	padding-right: 18px;
-	padding-left: 18px;
-
-	&--menu,
-	&--form {
+.wrapper {
+	&--inner {
 		width: 100%;
-		padding-right: 0;
-		padding-left: 0;
+		margin: 0 auto;
+		padding-right: 18px;
+		padding-left: 18px;
+
+		&--menu,
+		&--form {
+			width: 100%;
+			padding-right: 0;
+			padding-left: 0;
+		}
 	}
 }
 
-.visuallyHidden {
+.visually-hidden {
 	position: absolute;
 
 	width: 1px;
@@ -64,61 +66,60 @@ img {
 		font-size: 14px;
 	}
 
-	.innerWrapper {
-		max-width: 561px;
-		margin: 0 auto;
-		padding-right: 0;
-		padding-left: 0;
+	.wrapper {
+		&--inner {
+			max-width: 561px;
+			margin: 0 auto;
+			padding-right: 0;
+			padding-left: 0;
 
-		&--menu,
-		&--form {
-			max-width: 546px;
+			&--menu,
+			&--form {
+				max-width: 546px;
+			}
 		}
 	}
 }
 
 @media (min-width: $tabletWidth) {
-	.innerWrapper {
-		max-width: 712px;
+	.wrapper {
+		&--inner {
+			max-width: 712px;
+		}
 	}
 }
 
 @media (min-width: $tabDeskWidth) {
-	.innerWrapper {
-		width: 174px;
-		margin: 0;
-
-		&--menu,
-		&--form,
-		&--posts {
-			width: 712px;
-		}
-	}
-
-	.wrapper .innerWrapper--footer {
-		width: 100%;
-		max-width: 100%;
-	}
-
 	.wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		width: 896px;
 		margin: 0 auto;
+
+		&--inner {
+			width: 174px;
+			margin: 0;
+
+			&--menu,
+			&--form,
+			&--posts {
+				width: 712px;
+			}
+		}
 	}
 }
 
 @media (min-width: $desktopWidth) {
 	.wrapper {
 		width: 1088px;
-	}
 
-	.innerWrapper {
-		&--menu,
-		&--form,
-		&--posts {
-			width: 896px;
-			max-width: 896px;
+		&--inner {
+			&--menu,
+			&--form,
+			&--posts {
+				width: 896px;
+				max-width: 896px;
+			}
 		}
 	}
 }

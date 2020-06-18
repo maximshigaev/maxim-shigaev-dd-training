@@ -12,10 +12,10 @@
 		<include src="src/img/sprite.svg" />
 	</div>
 	<div class="wrapper">
-		<div class="innerWrapper">
+		<div class="wrapper--inner">
 			<div class="container">
 				<header class="header">
-					<a class="header__logoLink">
+					<a class="header__logo-link">
 						<picture>
 							<source type="image/webp"
 								srcset="img/header/logo.webp 1x, img/header/logo@2x.webp 2x"
@@ -71,7 +71,7 @@
 					</nav>
 				</header>
 			</div>
-			<div class="innerWrapper">
+			<div class="wrapper--inner">
 				<div class="container">
 					<aside class="widgets">
 						<div class="widgets__container">
@@ -100,8 +100,8 @@
 			</div>
 		</div>
 		<main>
-			<h1 class="visuallyHidden">Food sense main page</h1>
-			<div class="innerWrapper innerWrapper--menu">
+			<h1 class="visually-hidden">Food sense main page</h1>
+			<div class="wrapper--inner wrapper--inner--menu">
 				<section class="menu">
 					<div class="menu__intro">
 						<picture>
@@ -163,9 +163,9 @@
 					</ul>
 				</section>
 			</div>
-			<div class="innerWrapper innerWrapper--form">
+			<div class="wrapper--inner wrapper--inner--form">
 				<section class="form">
-					<h2 class="visuallyHidden">Subscription form</h2>
+					<h2 class="visually-hidden">Subscription form</h2>
 					<svg width="32" height="26">
 						<use xlink:href="#mail" />
 					</svg>
@@ -175,16 +175,16 @@
 					</p>
 					<form>
 						<input class="form__email" id="email" type="email" placeholder="Email" name="email" required />
-						<label class="visuallyHidden" for="email">Email</label>
+						<label class="visually-hidden" for="email">Email</label>
 						<button class="form__button" title="Subscribe">Subscribe</button>
 					</form>
 				</section>
 			</div>
-			<div class="innerWrapper innerWrapper--posts">
+			<div class="wrapper--inner wrapper--inner--posts">
 				<section class="posts">
-					<h2 class="visuallyHidden">Articles</h2>
+					<h2 class="visually-hidden">Articles</h2>
 					<article class="article article--best posts__article">
-						<h3 class="visuallyHidden">2012’s Best Summer Cookbooks</h3>
+						<h3 class="visually-hidden">2012’s Best Summer Cookbooks</h3>
 						<picture>
 							<source type="image/webp" media="(min-width:1176px)"
 								srcset="img/article/article1-desktop.webp 1x, img/article/article1-desktop@2x.webp 2x"
@@ -217,21 +217,21 @@
 								srcset="img/article/article1-mobile@2x.jpg 2x" alt="2012’s Best Summer Cookbooks"
 							/>
 						</picture>
-						<a class="article__mainLink" href="#" title="2012’s Best Summer Cookbooks">
+						<a class="article__main-link" href="#" title="2012’s Best Summer Cookbooks">
 							2012’s Best Summer Cookbooks
 						</a>
 						<p class="article__content">
 							With the best of the season coming from “orchards, farms and gardens,” NPR has put
 							together an impressive collection of 10 summer cookbooks.
 						</p>
-						<div class="article__wrapper">
-							<time class="acticle__time" datetime="2012-05-23">May 23, 2012</time>
+						<div class="article__footer">
+							<time class="article__time" datetime="2012-05-23">May 23, 2012</time>
 							<span>/</span>
 							<a class="article__link" href="#" title="Read">Read...</a>
 						</div>
 					</article>
 					<article class="article article--chips posts__article">
-						<h3 class="visuallyHidden">How to Make Vegetable Chips</h3>
+						<h3 class="visually-hidden">How to Make Vegetable Chips</h3>
 						<picture>
 							<source type="image/webp" media="(min-width:1176px)"
 								srcset="img/article/article2-desktop.webp 1x, img/article/article2-desktop@2x.webp 2x"
@@ -264,21 +264,21 @@
 								srcset="img/article/article2-mobile@2x.jpg 2x" alt="How to Make Vegetable Chips"
 							/>
 						</picture>
-						<a class="article__mainLink" href="#" title="How to Make Vegetable Chips">
+						<a class="article__main-link" href="#" title="How to Make Vegetable Chips">
 							How to Make Vegetable Chips
 						</a>
 						<p class="article__content">
 							About a month ago, I ate almost an entire box of kale chips. My brother and I were
 							visiting our cousin in Brooklyn, and before a very <br />thoughtfully prepared vagan...
 						</p>
-						<div class="article__wrapper">
-							<time class="acticle__time" datetime="2012-05-17">May 17, 2012</time>
+						<div class="article__footer">
+							<time class="article__time" datetime="2012-05-17">May 17, 2012</time>
 							<span>/</span>
 							<a class="article__link" href="#" title="Read">Read...</a>
 						</div>
 					</article>
 					<article class="article article--join posts__article">
-						<h3 class="visuallyHidden">Join us on Pinterest</h3>
+						<h3 class="visually-hidden">Join us on Pinterest</h3>
 						<picture>
 							<source type="image/webp" media="(min-width:1176px)"
 								srcset="img/article/article3-desktop.webp 1x, img/article/article3-desktop@2x.webp 2x"
@@ -311,18 +311,18 @@
 								srcset="img/article/article3-mobile@2x.jpg 2x" alt="Join us on Pinterest!"
 							/>
 						</picture>
-						<a class="article__mainLink" href="#" title="Join us on Pinterest!">Join us on Pinterest!</a>
+						<a class="article__main-link" href="#" title="Join us on Pinterest!">Join us on Pinterest!</a>
 						<p class="article__content">
 							If I could curate a cookbook for you, this <br /> would be it.
 						</p>
-						<div class="article__wrapper">
-							<time class="acticle__time" datetime="2012-05-16">May 16, 2012</time>
+						<div class="article__footer">
+							<time class="article__time" datetime="2012-05-16">May 16, 2012</time>
 							<span>/</span>
 							<a class="article__link" href="#" title="Read">Read...</a>
 						</div>
 					</article>
 						<article class="article article--recipe posts__article">
-						<h3 class="visuallyHidden">Recipes from a Sunday Supper</h3>
+						<h3 class="visually-hidden">Recipes from a Sunday Supper</h3>
 						<picture>
 							<source type="image/webp" media="(min-width:1176px)"
 								srcset="img/article/article4-desktop.webp 1x, img/article/article4-desktop@2x.webp 2x"
@@ -355,15 +355,15 @@
 								srcset="img/article/article4-mobile@2x.jpg 2x" alt="Recipes from a Sunday Supper"
 							/>
 						</picture>
-						<a class="article__mainLink" href="#" title="Recipes from a Sunday Supper">
+						<a class="article__main-link" href="#" title="Recipes from a Sunday Supper">
 							Recipes from a Sunday Supper
 						</a>
 						<p class="article__content">
 							I could not figure out what to do with the delectable slices of Pear Cake that I brought
 							home from this wonderful Sunday supper - eat them slowly, a little bit at...
 						</p>
-						<div class="article__wrapper">
-							<time class="acticle__time" datetime="2012-05-17">May 17, 2012</time>
+						<div class="article__footer">
+							<time class="article__time" datetime="2012-05-17">May 17, 2012</time>
 							<span>/</span>
 							<a class="article__link" href="#" title="Read">Read...</a>
 						</div>
@@ -371,50 +371,48 @@
 				</section>
 			</div>
 		</main>
-		<div class="innerWrapper innerWrapper--footer">
-			<footer class="footer">
-				<div class="footer__info">
-					<ul class="footer__list">
-						<li class="footer__item">
-							<a class="footer__link" href="#" title="Privacy Policy">Privacy Policy</a>
-						</li>
-						<li class="footer__item">
-							<a class="footer__link" href="#" title="Terms of Use">Terms of Use</a>
-						</li>
-						<li class="footer__item">
-							<a class="footer__link" href="#" title="Contact">Contact</a>
-						</li>
-					</ul>
-					<p class="footer__copyright">&copy; 2016 Food Sense, all rights reserved.</p>
-				</div>
-				<ul class="footer__socialList">
-					<li class="footer__socialItem">
-						<a class="footer__socialLink" href="https://twitter.com/" title="Twitter">
-							<svg width="32" height="26">
-								<use xlink:href="#twitterFooter" />
-							</svg>
-							<span class="visuallyHidden">Twitter</span>
-						</a>
+		<footer class="footer">
+			<div class="footer__info">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__link" href="#" title="Privacy Policy">Privacy Policy</a>
 					</li>
-					<li class="footer__socialItem">
-						<a class="footer__socialLink" href="https://facebook.com/" title="Facebook">
-							<svg width="32" height="32">
-								<use xlink:href="#fb" />
-							</svg>
-							<span class="visuallyHidden">Facebook</span>
-						</a>
+					<li class="footer__item">
+						<a class="footer__link" href="#" title="Terms of Use">Terms of Use</a>
 					</li>
-					<li class="footer__socialItem">
-						<a class="footer__socialLink" href="#" title="RSS">
-							<svg width="32" height="32">
-								<use xlink:href="#rss" />
-							</svg>
-							<span class="visuallyHidden">RSS</span>
-						</a>
+					<li class="footer__item">
+						<a class="footer__link" href="#" title="Contact">Contact</a>
 					</li>
 				</ul>
-			</footer>
-		</div>
+				<p class="footer__copyright">&copy; 2016 Food Sense, all rights reserved.</p>
+			</div>
+			<ul class="footer__social-list">
+				<li class="footer__social-item">
+					<a class="footer__social-link" href="https://twitter.com/" title="Twitter">
+						<svg width="32" height="26">
+							<use xlink:href="#twitterFooter" />
+						</svg>
+						<span class="visually-hidden">Twitter</span>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a class="footer__social-link" href="https://facebook.com/" title="Facebook">
+						<svg width="32" height="32">
+							<use xlink:href="#fb" />
+						</svg>
+						<span class="visually-hidden">Facebook</span>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a class="footer__social-link" href="#" title="RSS">
+						<svg width="32" height="32">
+							<use xlink:href="#rss" />
+						</svg>
+						<span class="visually-hidden">RSS</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
 	</div>
 </body>
 </html>

@@ -61,29 +61,29 @@
 		color: $mainGrayColor;
 	}
 
-	&__socialList {
+	&__social-list {
 		display: flex;
 		align-items: center;
 		margin-right: -2px;
 		margin-left: -2px;
 	}
 
-	&__socialItem {
+	&__social-item {
 		margin-right: 2px;
 		margin-left: 2px;
 	}
 }
 
-.footer__socialLink svg {
+.footer__social-link svg {
 	fill: $mainGrayColor;
 }
 
-.footer__socialLink:hover svg,
-.footer__socialLink:focus svg {
+.footer__social-link:hover svg,
+.footer__social-link:focus svg {
 	fill: $mainGreenColor;
 }
 
-.footer__socialLink:active svg {
+.footer__social-link:active svg {
 	fill-opacity: 0.3;
 }
 
@@ -94,7 +94,7 @@
 		padding-top: 21px;
 		padding-bottom: 36px;
 
-		&__socialList {
+		&__social-list {
 			margin-top: 6px;
 			margin-right: -7px;
 		}
@@ -103,22 +103,20 @@
 
 @media (min-width: $tabletWidth) {
 	.footer {
-		&__socialList {
+		&__social-list {
 			margin-top: 10px;
 			margin-right: -3px;
-		}
-
-		&__info {
-			margin-left: -2px;
 		}
 	}
 }
 
 @media (min-width: $tabDeskWidth) {
 	.footer {
+		width: 100%;
+		max-width: 100%;
 		padding-top: 18px;
 
-		&__socialList {
+		&__social-list {
 			margin-top: 5px;
 		}
 	}
@@ -134,7 +132,7 @@
 			margin-left: 8px;
 		}
 
-		&__socialList {
+		&__social-list {
 			margin-right: 5px;
 		}
 	}
