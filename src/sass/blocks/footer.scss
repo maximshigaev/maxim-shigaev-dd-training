@@ -2,9 +2,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: -6px;
-	margin-right: 2px;
-	margin-left: 8px;
+	margin-right: 18px;
+	margin-left: 18px;
 	padding-top: 19px;
 	padding-bottom: 22px;
 
@@ -89,8 +88,8 @@
 
 @media (min-width: $mobileWidth) {
 	.footer {
-		margin-right: 7px;
-		margin-left: 0;
+		margin-right: 30px;
+		margin-left: 30px;
 		padding-top: 21px;
 		padding-bottom: 36px;
 
@@ -103,6 +102,9 @@
 
 @media (min-width: $tabletWidth) {
 	.footer {
+		margin-right: 80px;
+		margin-left: 80px;
+
 		&__social-list {
 			margin-top: 10px;
 			margin-right: -3px;
@@ -114,6 +116,8 @@
 	.footer {
 		width: 100%;
 		max-width: 100%;
+		margin-right: 0;
+		margin-left: 0;
 		padding-top: 18px;
 
 		&__social-list {
@@ -124,7 +128,6 @@
 
 @media (min-width: $desktopWidth) {
 	.footer {
-		margin-right: 17px;
 		margin-left: -18px;
 		padding-top: 20px;
 

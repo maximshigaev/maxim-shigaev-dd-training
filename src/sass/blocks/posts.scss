@@ -1,7 +1,9 @@
 .posts {
-	padding-left: 35px;
+	padding-right: 18px;
+	padding-left: 18px;
 
 	&__article {
+		margin: 0 auto;
 		margin-bottom: 27px;
 	}
 }
@@ -14,8 +16,8 @@
 		margin-right: -17px;
 		margin-bottom: 31px;
 		margin-left: -17px;
-		padding-right: 7px;
-		padding-left: 8px;
+		padding-right: 0;
+		padding-left: 0;
 	}
 
 	.posts .posts__article {
@@ -27,14 +29,22 @@
 
 @media (min-width: $tabletWidth) {
 	.posts {
+		width: 712px;
+		margin: 0 auto;
 		margin-bottom: 65px;
-		padding-right: 9px;
-		padding-left: 1px;
 	}
 
 	.posts .posts__article {
 		margin-right: 12px;
 		margin-left: 12px;
+	}
+
+	.posts .posts__article:last-child {
+		margin-right: 0;
+	}
+
+	.posts .posts__article:nth-child(2) {
+		margin-left: 0;
 	}
 }
 
@@ -47,6 +57,7 @@
 
 @media (min-width: $desktopWidth) {
 	.posts {
+		width: 896px;
 		margin-bottom: 13px;
 		padding-left: 0;
 	}

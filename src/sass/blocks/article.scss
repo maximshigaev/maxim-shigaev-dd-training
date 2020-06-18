@@ -1,8 +1,10 @@
 .article {
+	max-width: 375px;
+
 	&__image {
 		margin-bottom: 9px;
 
-		box-shadow: 0 1px 0 1px #ececec;
+		border: 1px solid #ececec;
 	}
 
 	&__main-link {
@@ -13,15 +15,6 @@
 		line-height: 21px;
 		color: $mainGreenColor;
 		letter-spacing: -0.44px;
-
-		&:hover,
-		&:focus {
-			text-decoration: underline;
-		}
-
-		&:active {
-			opacity: 0.3;
-		}
 	}
 
 	&__content {
@@ -36,15 +29,18 @@
 		font-size: 16px;
 		color: $mainGreenColor;
 		letter-spacing: -0.32px;
+	}
 
-		&:hover,
-		&:focus {
-			text-decoration: underline;
-		}
+	&__main-link:hover,
+	&__main-link:focus,
+	&__link:hover,
+	&__link:focus {
+		text-decoration: underline;
+	}
 
-		&:active {
-			opacity: 0.3;
-		}
+	&__main-link:active,
+	&__link:active {
+		opacity: 0.3;
 	}
 
 	&__time {
@@ -148,6 +144,10 @@
 			line-height: 20px;
 		}
 
+		&__footer {
+			margin-top: auto;
+		}
+
 		&--chips,
 		&--best {
 			min-height: 337px;
@@ -183,11 +183,6 @@
 
 	.article--join span {
 		display: inline;
-	}
-
-	.article--recipe .article__footer {
-		margin-top: auto;
-		margin-bottom: 6px;
 	}
 
 	.article--recipe .article__time {
@@ -235,7 +230,7 @@
 
 @media (min-width: $desktopWidth) {
 	.article {
-		width: 207px;
+		width: 206px;
 	}
 
 	.article .article__image {

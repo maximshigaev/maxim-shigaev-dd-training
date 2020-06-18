@@ -1,16 +1,21 @@
 .menu {
+	width: 100%;
 	margin-bottom: 25px;
 
 	&__intro {
 		position: relative;
 	}
 
-	&__heading {
+	&__text {
 		position: absolute;
-		bottom: 11%;
+		bottom: 3px;
 
 		width: 100%;
+	}
+
+	&__heading {
 		padding-top: 16px;
+		padding-right: 8px;
 		padding-bottom: 13px;
 		padding-left: 8px;
 
@@ -23,10 +28,6 @@
 	}
 
 	&__subtitle {
-		position: absolute;
-		bottom: 3px;
-
-		width: 100%;
 		padding-top: 9px;
 		padding-right: 6px;
 		padding-bottom: 15px;
@@ -51,18 +52,15 @@
 
 @media (min-width: $mobileWidth) {
 	.menu {
+		width: 546px;
+		margin: 0 auto;
 		margin-bottom: 34px;
 
-		&__heading {
-			bottom: 13%;
-
+		&__text {
 			max-width: 546px;
 		}
 
 		&__subtitle {
-			bottom: 5px;
-
-			max-width: 546px;
 			padding-top: 14px;
 			padding-bottom: 15px;
 			padding-left: 24px;
@@ -72,30 +70,29 @@
 
 @media (min-width: $tabletWidth) {
 	.menu {
-		margin-bottom: 0;
+		width: 712px;
+		margin-bottom: 21px;
+
 
 		&__intro {
 			height: 445px;
 		}
 
-		&__heading {
-			bottom: 111px;
+		&__text {
+			bottom: 69px;
 
+			width: 481px;
+		}
+
+		&__heading {
 			width: 269px;
 			padding-left: 18px;
 
 			opacity: 1;
 		}
 
-		&__subtitle {
-			bottom: 69px;
-
-			width: 481px;
-		}
-
 		&__item {
 			display: flex;
-			margin-bottom: 21px;
 		}
 
 		&__list {
@@ -139,20 +136,22 @@
 	.menu {
 		margin-top: 50px;
 
+		&__text {
+			width: 487px;
+		}
+
 		&__heading {
 			width: 272px;
 			padding-left: 21px;
-		}
-
-		&__subtitle {
-			width: 487px;
 		}
 	}
 }
 
 @media (min-width: $desktopWidth) {
 	.menu {
+		width: 896px;
 		margin-top: 46px;
+		margin-bottom: 30px;
 
 		&__heading {
 			padding-left: 19px;
@@ -178,10 +177,6 @@
 			font-style: italic;
 			font-size: 10px;
 			line-height: 19px;
-		}
-
-		&__item {
-			margin-bottom: 30px;
 		}
 	}
 }
