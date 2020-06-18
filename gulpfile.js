@@ -1,34 +1,31 @@
-const gulp = require('gulp');
-const postHtml = require('gulp-posthtml');
-const include = require('posthtml-include');
-const del = require('del');
-const concat = require('gulp-concat');
-const sourceMaps = require('gulp-sourcemaps');
-const postCss = require('gulp-postcss');
-const autoPrefixer = require('autoprefixer');
-const groupMedia = require('gulp-group-css-media-queries');
-const minifyCss = require('gulp-clean-css');
-const rename = require('gulp-rename');
-const imageMin = require('gulp-imagemin');
-const plumber = require('gulp-plumber');
-const gulpIf = require('gulp-if');
-const browserSync = require("browser-sync").create();
-const webp = require('gulp-webp');
-const sass = require('gulp-sass');
-const sassGlob = require('gulp-sass-glob');
+var gulp = require('gulp');
+var postHtml = require('gulp-posthtml');
+var include = require('posthtml-include');
+var del = require('del');
+var sourceMaps = require('gulp-sourcemaps');
+var groupMedia = require('gulp-group-css-media-queries');
+var minifyCss = require('gulp-clean-css');
+var rename = require('gulp-rename');
+var imageMin = require('gulp-imagemin');
+var plumber = require('gulp-plumber');
+var gulpIf = require('gulp-if');
+var browserSync = require("browser-sync").create();
+var webp = require('gulp-webp');
+var sass = require('gulp-sass');
+var sassGlob = require('gulp-sass-glob');
 
-const env = process.env.NODE_ENV;
-const config = {
+var env = process.env.NODE_ENV;
+var config = {
 	SRC_PATH: `src`,
 	BUILD_PATH: `build`
 }
 
-const reload = (done) => {
+var reload = (done) => {
   	browserSync.reload();
   	done();
 }
 
-const html = () => {
+var html = () => {
 	return gulp.src(`${config.SRC_PATH}/*.html`)
 		.pipe(plumber())
 		.pipe(postHtml([
@@ -37,18 +34,15 @@ const html = () => {
 		.pipe(gulp.dest(`${config.BUILD_PATH}`));
 }
 
-const clean = () => del(`${config.BUILD_PATH}`);
+var clean = () => del(`${config.BUILD_PATH}`);
 
-const styles = () => {
+var styles = () => {
 	return gulp.src(`${config.SRC_PATH}/sass/style.scss`)
 		.pipe(plumber())
 		.pipe(gulpIf(env === `dev`, sourceMaps.init()))
 		.pipe(sassGlob())
 		.pipe(sass())
 		.pipe(gulpIf(env === `prod`, groupMedia()))
-		.pipe(gulpIf(env === `prod`, postCss([
-			autoPrefixer()
-		])))
 		.pipe(gulpIf(env === `dev`, sourceMaps.write(`.`)))
 		.pipe(gulpIf(env === `dev`, gulp.dest(`${config.BUILD_PATH}/css`)))
 		.pipe(rename(`style.min.css`))
@@ -56,7 +50,7 @@ const styles = () => {
 		.pipe(gulp.dest(`${config.BUILD_PATH}/css`));
 }
 
-const images = () => {
+var images = () => {
 	return gulp.src(`${config.SRC_PATH}/img/**/*.+(jpg|png)`)
 		.pipe(gulpIf(env === `prod`, imageMin([
 			imageMin.mozjpeg({quality: 75, progressive: true}),
@@ -65,20 +59,20 @@ const images = () => {
 		.pipe(gulp.dest(`${config.BUILD_PATH}/img`));
 }
 
-const webpImg = () => {
+var webpImg = () => {
 	return gulp.src(`${config.SRC_PATH}/img/**/*.+(jpg|png)`)
 		.pipe(webp({quality: 90}))
 		.pipe(gulp.dest(`${config.BUILD_PATH}/img`));
 }
 
-const server = () => {
+var server = () => {
   	browserSync.init({
 		server: `${config.BUILD_PATH}`,
 		open: true
 	})
 }
 
-const watch = () => {
+var watch = () => {
 	gulp.watch(`${config.SRC_PATH}/*.html`, gulp.series(html, reload));
 	gulp.watch(`${config.SRC_PATH}/sass/**/*.scss`, gulp.series(styles, reload));
 	gulp.watch(`${config.SRC_PATH}/img/**/*.+(jpg|png|svg)`, gulp.series(images, reload));
