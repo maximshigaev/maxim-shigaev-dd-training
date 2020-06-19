@@ -7,16 +7,6 @@
 		border: 1px solid #ececec;
 	}
 
-	&__main-link {
-		display: block;
-		margin-bottom: 14px;
-
-		font-size: 22px;
-		line-height: 21px;
-		color: $mainGreenColor;
-		letter-spacing: -0.44px;
-	}
-
 	&__content {
 		margin-bottom: 19px;
 		margin-left: -1px;
@@ -29,16 +19,23 @@
 		font-size: 16px;
 		color: $mainGreenColor;
 		letter-spacing: -0.32px;
+
+		&--main {
+			display: block;
+			margin-bottom: 14px;
+
+			font-size: 22px;
+			line-height: 21px;
+			color: $mainGreenColor;
+			letter-spacing: -0.44px;
+		}
 	}
 
-	&__main-link:hover,
-	&__main-link:focus,
 	&__link:hover,
 	&__link:focus {
 		text-decoration: underline;
 	}
 
-	&__main-link:active,
 	&__link:active {
 		opacity: 0.3;
 	}
@@ -87,7 +84,7 @@
 	margin-bottom: 12px;
 }
 
-.article--join .article__main-link {
+.article--join .article__link--main {
 	margin-bottom: 16px;
 }
 
@@ -95,7 +92,7 @@
 	margin-bottom: 11px;
 }
 
-.article--recipe .article__main-link {
+.article--recipe .article__link--main {
 	margin-bottom: 18px;
 }
 
@@ -121,13 +118,6 @@
 		min-height: 320px;
 		margin-left: 0;
 
-		&__main-link {
-			margin-bottom: 5px;
-
-			font-size: 16px;
-			letter-spacing: -0.32px;
-		}
-
 		&__content {
 			margin-bottom: 10px;
 
@@ -142,6 +132,15 @@
 		&__link {
 			font-size: 14px;
 			line-height: 20px;
+		}
+
+		&__link {
+			&--main {
+				margin-bottom: 5px;
+
+				font-size: 16px;
+				letter-spacing: -0.32px;
+			}
 		}
 
 		&__footer {
@@ -173,7 +172,7 @@
 		line-height: 20px;
 	}
 
-	.article--join .article__main-link {
+	.article--join .article__link {
 		margin-bottom: 3px;
 	}
 
@@ -200,7 +199,7 @@
 		width: 157px;
 	}
 
-	.article .article__main-link {
+	.article .article__link--main {
 		margin-bottom: 8px;
 	}
 
@@ -223,7 +222,7 @@
 		width: 159px;
 	}
 
-	.article--recipe .article__main-link {
+	.article--recipe .article__link--main {
 		letter-spacing: -0.35px;
 	}
 }
@@ -237,11 +236,11 @@
 		margin-bottom: 6px;
 	}
 
-	.article .article__main-link {
+	.article .article__link--main {
 		margin-bottom: 9px;
 	}
 
-	.article--chips .article__main-link,
+	.article--chips .article__link--main,
 	.article--chips .article__content {
 		margin-bottom: 30px;
 	}
