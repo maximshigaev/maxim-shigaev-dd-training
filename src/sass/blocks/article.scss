@@ -2,9 +2,34 @@
 	max-width: 375px;
 
 	&__image {
+		min-height: 200px;
 		margin-bottom: 9px;
 
+		background-repeat: no-repeat;
+		background-size: 100%;
 		border: 1px solid #ececec;
+
+		&--best {
+			background-image: url('../img/article/article1/article1-mobile.jpg');
+		}
+
+		&--chips {
+			margin-bottom: 6px;
+
+			background-image: url('../img/article/article2/article2-mobile.jpg');
+		}
+
+		&--join {
+			margin-bottom: 12px;
+
+			background-image: url('../img/article/article3/article3-mobile.jpg');
+		}
+
+		&--recipe {
+			margin-bottom: 11px;
+
+			background-image: url('../img/article/article4/article4-mobile.jpg');
+		}
 	}
 
 	&__content {
@@ -68,10 +93,6 @@
 	color: $mainGrayColor;
 }
 
-.article--chips .article__image {
-	margin-bottom: 6px;
-}
-
 .article--chips .article__content {
 	margin-bottom: 29px;
 }
@@ -80,16 +101,8 @@
 	margin-right: 4px;
 }
 
-.article--join .article__image {
-	margin-bottom: 12px;
-}
-
 .article--join .article__link--main {
 	margin-bottom: 16px;
-}
-
-.article--recipe .article__image {
-	margin-bottom: 11px;
 }
 
 .article--recipe .article__link--main {
@@ -158,7 +171,24 @@
 	}
 
 	.article .article__image {
+		min-height: 150px;
 		margin-bottom: 8px;
+
+		&--best {
+			background-image: url('../img/article/article1/article1-mob-tab.jpg');
+		}
+
+		&--chips {
+			background-image: url('../img/article/article2/article2-mob-tab.jpg');
+		}
+
+		&--join {
+			background-image: url('../img/article/article3/article3-mob-tab.jpg');
+		}
+
+		&--recipe {
+			background-image: url('../img/article/article4/article4-mob-tab.jpg');
+		}
 	}
 
 	.article--chips .article__content {
@@ -199,6 +229,26 @@
 		width: 157px;
 	}
 
+	.article .article__image {
+		min-height: 113px;
+
+		&--best {
+			background-image: url('../img/article/article1/article1-tablet.jpg');
+		}
+
+		&--chips {
+			background-image: url('../img/article/article2/article2-tablet.jpg');
+		}
+
+		&--join {
+			background-image: url('../img/article/article3/article3-tablet.jpg');
+		}
+
+		&--recipe {
+			background-image: url('../img/article/article4/article4-tablet.jpg');
+		}
+	}
+
 	.article .article__link--main {
 		margin-bottom: 8px;
 	}
@@ -220,6 +270,24 @@
 @media (min-width: $tabDeskWidth) {
 	.article {
 		width: 159px;
+
+		&__image {
+			&--best {
+				background-image: url('../img/article/article1/article1-tab-desk.jpg');
+			}
+
+			&--chips {
+				background-image: url('../img/article/article2/article2-tab-desk.jpg');
+			}
+
+			&--join {
+				background-image: url('../img/article/article3/article3-tab-desk.jpg');
+			}
+
+			&--recipe {
+				background-image: url('../img/article/article4/article4-tab-desk.jpg');
+			}
+		}
 	}
 
 	.article--recipe .article__link--main {
@@ -233,7 +301,24 @@
 	}
 
 	.article .article__image {
+		min-height: 143px;
 		margin-bottom: 6px;
+
+		&--best {
+			background-image: url('../img/article/article1/article1-desktop.jpg');
+		}
+
+		&--chips {
+			background-image: url('../img/article/article2/article2-desktop.jpg');
+		}
+
+		&--join {
+			background-image: url('../img/article/article3/article3-desktop.jpg');
+		}
+
+		&--recipe {
+			background-image: url('../img/article/article4/article4-desktop.jpg');
+		}
 	}
 
 	.article .article__link--main {
