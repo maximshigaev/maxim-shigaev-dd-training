@@ -84,3 +84,21 @@ First of all, you should clone or download this repository on your local machine
 and run `npm i` in order to install all necessary dependencies via NPM. Then run `npm run build` to create
 an optimized production build or `npm run start` to create a build with source maps. Both commands
 will open this project in your browser.
+
+## Fifth task
+
+### Requirements specification
+- To add cross-browser compatibility to the project.
+- To support any modern browser as well as Internet Explorer 11.
+- To use PostCSS technology.
+- Not to use JavaScript at all.
+
+### Achieved personal goals
+- To implement background images in CSS for retina screens using media-queries within the project.
+- To use mixins and '@each' directive features of SCSS preprocessor.
+
+### Usage
+First of all, you should clone or download this repository on your local machine. After that, open your terminal
+and run `npm i` in order to install all necessary dependencies via NPM. Then run `npm run build` to create
+an optimized production build or `npm run start` to create a build with source maps. Both commands
+will open this project in your browser.
