@@ -13,6 +13,8 @@ var browserSync = require("browser-sync").create();
 var webp = require('gulp-webp');
 var sass = require('gulp-sass');
 var sassGlob = require('gulp-sass-glob');
+var postCss = require('gulp-postcss');
+var autoPrefixer = require('autoprefixer');
 
 var env = process.env.NODE_ENV;
 var config = {
@@ -43,6 +45,9 @@ var styles = () => {
 		.pipe(sassGlob())
 		.pipe(sass())
 		.pipe(gulpIf(env === `prod`, groupMedia()))
+		.pipe(gulpIf(env === `prod`, postCss([
+			autoPrefixer()
+		])))
 		.pipe(gulpIf(env === `dev`, sourceMaps.write(`.`)))
 		.pipe(gulpIf(env === `dev`, gulp.dest(`${config.BUILD_PATH}/css`)))
 		.pipe(rename(`style.min.css`))
