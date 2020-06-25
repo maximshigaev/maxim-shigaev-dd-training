@@ -7,7 +7,7 @@
 
 		min-height: 373px;
 
-		background-image: url('../img/menu/background-mobile.jpg');
+		background-image: url($menuPath + 'background-mobile.jpg');
 	}
 
 	&__text {
@@ -73,7 +73,7 @@
 		&__intro {
 			min-height: 353px;
 
-			background-image: url('../img/menu/background-mob-tab.jpg');
+			background-image: url($menuPath + 'background-mob-tab.jpg');
 		}
 	}
 }
@@ -87,7 +87,7 @@
 		&__intro {
 			min-height: 445px;
 
-			background-image: url('../img/menu/background-tablet.jpg');
+			background-image: url($menuPath + 'background-tablet.jpg');
 		}
 
 		&__text {
@@ -192,7 +192,7 @@
 		}
 
 		&__intro {
-			background-image: url('../img/menu/background-desktop.jpg');
+			background-image: url($menuPath + 'background-desktop.jpg');
 		}
 	}
 }

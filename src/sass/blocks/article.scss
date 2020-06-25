@@ -10,25 +10,25 @@
 		border: 1px solid #ececec;
 
 		&--best {
-			background-image: url('../img/article/article1/article1-mobile.jpg');
+			background-image: url($articlePath + 'article1/article1-mobile.jpg');
 		}
 
 		&--chips {
 			margin-bottom: 6px;
 
-			background-image: url('../img/article/article2/article2-mobile.jpg');
+			background-image: url($articlePath + 'article2/article2-mobile.jpg');
 		}
 
 		&--join {
 			margin-bottom: 12px;
 
-			background-image: url('../img/article/article3/article3-mobile.jpg');
+			background-image: url($articlePath + 'article3/article3-mobile.jpg');
 		}
 
 		&--recipe {
 			margin-bottom: 11px;
 
-			background-image: url('../img/article/article4/article4-mobile.jpg');
+			background-image: url($articlePath + 'article4/article4-mobile.jpg');
 		}
 	}
 
@@ -175,19 +175,19 @@
 		margin-bottom: 8px;
 
 		&--best {
-			background-image: url('../img/article/article1/article1-mob-tab.jpg');
+			background-image: url($articlePath + 'article1/article1-mob-tab.jpg');
 		}
 
 		&--chips {
-			background-image: url('../img/article/article2/article2-mob-tab.jpg');
+			background-image: url($articlePath + 'article2/article2-mob-tab.jpg');
 		}
 
 		&--join {
-			background-image: url('../img/article/article3/article3-mob-tab.jpg');
+			background-image: url($articlePath + 'article3/article3-mob-tab.jpg');
 		}
 
 		&--recipe {
-			background-image: url('../img/article/article4/article4-mob-tab.jpg');
+			background-image: url($articlePath + 'article4/article4-mob-tab.jpg');
 		}
 	}
 
@@ -233,19 +233,19 @@
 		min-height: 113px;
 
 		&--best {
-			background-image: url('../img/article/article1/article1-tablet.jpg');
+			background-image: url($articlePath + 'article1/article1-tablet.jpg');
 		}
 
 		&--chips {
-			background-image: url('../img/article/article2/article2-tablet.jpg');
+			background-image: url($articlePath + 'article2/article2-tablet.jpg');
 		}
 
 		&--join {
-			background-image: url('../img/article/article3/article3-tablet.jpg');
+			background-image: url($articlePath + 'article3/article3-tablet.jpg');
 		}
 
 		&--recipe {
-			background-image: url('../img/article/article4/article4-tablet.jpg');
+			background-image: url($articlePath + 'article4/article4-tablet.jpg');
 		}
 	}
 
@@ -273,19 +273,19 @@
 
 		&__image {
 			&--best {
-				background-image: url('../img/article/article1/article1-tab-desk.jpg');
+				background-image: url($articlePath + 'article1/article1-tab-desk.jpg');
 			}
 
 			&--chips {
-				background-image: url('../img/article/article2/article2-tab-desk.jpg');
+				background-image: url($articlePath + 'article2/article2-tab-desk.jpg');
 			}
 
 			&--join {
-				background-image: url('../img/article/article3/article3-tab-desk.jpg');
+				background-image: url($articlePath + 'article3/article3-tab-desk.jpg');
 			}
 
 			&--recipe {
-				background-image: url('../img/article/article4/article4-tab-desk.jpg');
+				background-image: url($articlePath + 'article4/article4-tab-desk.jpg');
 			}
 		}
 	}
@@ -305,19 +305,19 @@
 		margin-bottom: 6px;
 
 		&--best {
-			background-image: url('../img/article/article1/article1-desktop.jpg');
+			background-image: url($articlePath + 'article1/article1-desktop.jpg');
 		}
 
 		&--chips {
-			background-image: url('../img/article/article2/article2-desktop.jpg');
+			background-image: url($articlePath + 'article2/article2-desktop.jpg');
 		}
 
 		&--join {
-			background-image: url('../img/article/article3/article3-desktop.jpg');
+			background-image: url($articlePath + 'article3/article3-desktop.jpg');
 		}
 
 		&--recipe {
-			background-image: url('../img/article/article4/article4-desktop.jpg');
+			background-image: url($articlePath + 'article4/article4-desktop.jpg');
 		}
 	}
 
