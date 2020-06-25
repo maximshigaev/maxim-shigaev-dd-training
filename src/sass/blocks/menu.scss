@@ -8,6 +8,8 @@
 		min-height: 373px;
 
 		background-image: url($menuPath + 'background-mobile.jpg');
+
+		@include retinaBgr($menuPath + 'background-mobile@2x.jpg');
 	}
 
 	&__text {
@@ -74,6 +76,8 @@
 			min-height: 353px;
 
 			background-image: url($menuPath + 'background-mob-tab.jpg');
+
+			@include retinaBgr($menuPath + 'background-mob-tab@2x.jpg');
 		}
 	}
 }
@@ -88,6 +92,8 @@
 			min-height: 445px;
 
 			background-image: url($menuPath + 'background-tablet.jpg');
+
+			@include retinaBgr($menuPath + 'background-tablet@2x.jpg');
 		}
 
 		&__text {
@@ -193,6 +199,8 @@
 
 		&__intro {
 			background-image: url($menuPath + 'background-desktop.jpg');
+
+			@include retinaBgr($menuPath + 'background-desktop@2x.jpg');
 		}
 	}
 }

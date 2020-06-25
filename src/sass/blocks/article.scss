@@ -11,24 +11,32 @@
 
 		&--best {
 			background-image: url($articlePath + 'article1/article1-mobile.jpg');
+
+			@include retinaBgr($articlePath + 'article1/article1-mobile@2x.jpg');
 		}
 
 		&--chips {
 			margin-bottom: 6px;
 
 			background-image: url($articlePath + 'article2/article2-mobile.jpg');
+
+			@include retinaBgr($articlePath + 'article2/article2-mobile@2x.jpg');
 		}
 
 		&--join {
 			margin-bottom: 12px;
 
 			background-image: url($articlePath + 'article3/article3-mobile.jpg');
+
+			@include retinaBgr($articlePath + 'article3/article3-mobile@2x.jpg');
 		}
 
 		&--recipe {
 			margin-bottom: 11px;
 
 			background-image: url($articlePath + 'article4/article4-mobile.jpg');
+
+			@include retinaBgr($articlePath + 'article4/article4-mobile@2x.jpg');
 		}
 	}
 
@@ -176,18 +184,26 @@
 
 		&--best {
 			background-image: url($articlePath + 'article1/article1-mob-tab.jpg');
+
+			@include retinaBgr($articlePath + 'article1/article1-mob-tab@2x.jpg');
 		}
 
 		&--chips {
 			background-image: url($articlePath + 'article2/article2-mob-tab.jpg');
+
+			@include retinaBgr($articlePath + 'article2/article2-mob-tab@2x.jpg');
 		}
 
 		&--join {
 			background-image: url($articlePath + 'article3/article3-mob-tab.jpg');
+
+			@include retinaBgr($articlePath + 'article3/article3-mob-tab@2x.jpg');
 		}
 
 		&--recipe {
 			background-image: url($articlePath + 'article4/article4-mob-tab.jpg');
+
+			@include retinaBgr($articlePath + 'article4/article4-mob-tab@2x.jpg');
 		}
 	}
 
@@ -234,18 +250,26 @@
 
 		&--best {
 			background-image: url($articlePath + 'article1/article1-tablet.jpg');
+
+			@include retinaBgr($articlePath + 'article1/article1-tablet@2x.jpg');
 		}
 
 		&--chips {
 			background-image: url($articlePath + 'article2/article2-tablet.jpg');
+
+			@include retinaBgr($articlePath + 'article2/article2-tablet@2x.jpg');
 		}
 
 		&--join {
 			background-image: url($articlePath + 'article3/article3-tablet.jpg');
+
+			@include retinaBgr($articlePath + 'article3/article3-tablet@2x.jpg');
 		}
 
 		&--recipe {
 			background-image: url($articlePath + 'article4/article4-tablet.jpg');
+
+			@include retinaBgr($articlePath + 'article4/article4-tablet@2x.jpg');
 		}
 	}
 
@@ -274,18 +298,26 @@
 		&__image {
 			&--best {
 				background-image: url($articlePath + 'article1/article1-tab-desk.jpg');
+
+				@include retinaBgr($articlePath + 'article1/article1-tab-desk@2x.jpg');
 			}
 
 			&--chips {
 				background-image: url($articlePath + 'article2/article2-tab-desk.jpg');
+
+				@include retinaBgr($articlePath + 'article2/article2-tab-desk@2x.jpg');
 			}
 
 			&--join {
 				background-image: url($articlePath + 'article3/article3-tab-desk.jpg');
+
+				@include retinaBgr($articlePath + 'article3/article3-tab-desk@2x.jpg');
 			}
 
 			&--recipe {
 				background-image: url($articlePath + 'article4/article4-tab-desk.jpg');
+
+				@include retinaBgr($articlePath + 'article4/article4-tab-desk@2x.jpg');
 			}
 		}
 	}
@@ -306,18 +338,26 @@
 
 		&--best {
 			background-image: url($articlePath + 'article1/article1-desktop.jpg');
+
+			@include retinaBgr($articlePath + 'article1/article1-desktop@2x.jpg');
 		}
 
 		&--chips {
 			background-image: url($articlePath + 'article2/article2-desktop.jpg');
+
+			@include retinaBgr($articlePath + 'article2/article2-desktop@2x.jpg');
 		}
 
 		&--join {
 			background-image: url($articlePath + 'article3/article3-desktop.jpg');
+
+			@include retinaBgr($articlePath + 'article3/article3-desktop@2x.jpg');
 		}
 
 		&--recipe {
 			background-image: url($articlePath + 'article4/article4-desktop.jpg');
+
+			@include retinaBgr($articlePath + 'article4/article4-desktop@2x.jpg');
 		}
 	}
 
