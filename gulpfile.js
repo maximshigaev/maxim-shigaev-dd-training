@@ -10,7 +10,6 @@ var imageMin = require('gulp-imagemin');
 var plumber = require('gulp-plumber');
 var gulpIf = require('gulp-if');
 var browserSync = require("browser-sync").create();
-var webp = require('gulp-webp');
 var sass = require('gulp-sass');
 var sassGlob = require('gulp-sass-glob');
 var postCss = require('gulp-postcss');
@@ -64,12 +63,6 @@ var images = () => {
 		.pipe(gulp.dest(`${config.BUILD_PATH}/img`));
 }
 
-var webpImg = () => {
-	return gulp.src(`${config.SRC_PATH}/img/**/*.+(jpg|png)`)
-		.pipe(webp({quality: 90}))
-		.pipe(gulp.dest(`${config.BUILD_PATH}/img`));
-}
-
 var server = () => {
   	browserSync.init({
 		server: `${config.BUILD_PATH}`,
@@ -84,5 +77,5 @@ var watch = () => {
 }
 
 gulp.task(`default`,
-	gulp.series(clean, gulp.parallel(images, styles, html, webpImg), gulp.parallel(watch, server))
+	gulp.series(clean, gulp.parallel(images, styles, html), gulp.parallel(watch, server))
 );
