@@ -108,13 +108,17 @@
 				margin-right: -7px;
 			}
 		}
+
+		&__copyright {
+			max-width: 195px;
+		}
 	}
 }
 
 @media (min-width: $tabletWidth) {
 	.footer {
-		margin-right: 80px;
-		margin-left: 80px;
+		max-width: 712px;
+		margin: 0 auto;
 
 		&__list {
 			&--social {
@@ -138,12 +142,15 @@
 				margin-top: 5px;
 			}
 		}
+
+		&__copyright {
+			max-width: 208px;
+		}
 	}
 }
 
 @media (min-width: $desktopWidth) {
 	.footer {
-		margin-left: -18px;
 		padding-top: 20px;
 
 		&__info {

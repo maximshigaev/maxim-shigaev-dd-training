@@ -8,6 +8,8 @@
 		min-height: 373px;
 
 		background-image: url($menuPath + 'background-mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
 
 		@include retinaBgr($menuPath + 'background-mobile@2x.jpg');
 	}
@@ -58,7 +60,7 @@
 
 @media (min-width: $mobileWidth) {
 	.menu {
-		width: 546px;
+		max-width: 546px;
 		margin: 0 auto;
 		margin-bottom: 34px;
 
@@ -84,7 +86,7 @@
 
 @media (min-width: $tabletWidth) {
 	.menu {
-		width: 712px;
+		max-width: 712px;
 		margin-bottom: 21px;
 
 
@@ -166,7 +168,7 @@
 
 @media (min-width: $desktopWidth) {
 	.menu {
-		width: 896px;
+		max-width: 896px;
 		margin-top: 46px;
 		margin-bottom: 30px;
 

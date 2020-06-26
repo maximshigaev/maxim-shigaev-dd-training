@@ -22,7 +22,7 @@
 	&__content {
 		margin-bottom: 19px;
 		margin-left: -1px;
-		padding-right: 20px;
+		padding-right: 9px;
 
 		letter-spacing: -0.36px;
 	}
@@ -120,6 +120,7 @@
 
 		&__content {
 			margin-bottom: 10px;
+			padding-right: 20px;
 
 			letter-spacing: -0.28px;
 		}
@@ -186,7 +187,7 @@
 	}
 
 	.article--recipe .article__content {
-		padding-right: 8px;
+		padding-right: 7px;
 	}
 
 	.article--join span {
@@ -195,10 +196,6 @@
 
 	.article--recipe .article__time {
 		margin-left: 0;
-	}
-
-	.article--join br {
-		display: none;
 	}
 }
 
@@ -226,11 +223,15 @@
 
 	.article .article__content {
 		margin-bottom: 10px;
-		padding-right: 0;
+		padding-right: 2px;
 	}
 
 	.article--chips br {
 		display: inline;
+	}
+
+	.article--join br {
+		display: none;
 	}
 
 	.article .article__footer {
@@ -254,7 +255,13 @@
 	}
 
 	.article--recipe .article__link--main {
+		padding-right: 2px;
+
 		letter-spacing: -0.35px;
+	}
+
+	.article--recipe .article__content {
+		padding-right: 0;
 	}
 }
 
@@ -283,6 +290,10 @@
 	.article--chips .article__link--main,
 	.article--chips .article__content {
 		margin-bottom: 30px;
+	}
+
+	.article--chips .article__content {
+		padding-right: 0;
 	}
 
 	.article--recipe .article__content {
